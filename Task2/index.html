@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- navbar -->
+    <nav>
+        <h3>Abhishek Shinde</h3>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- about -->
+
+    <div id="about">
+
+        <div class="info">
+            <h1 style="margin-top: 50px; text-align: center;">Hi There</h1>
+            <h1 style="text-align: center;">I'm <span style="color: #deb54f;">Abhishek Shinde</span></h1>
+            <p style="margin: 40px 40px; font-size: 19px;">I am a Web Developer. As Web Development consists of multiple
+                parts, I am pretty good with the frontend development part but my expertise lies in the backend
+                development of the website using the Django Framework. Along with Web Development I am also involved in
+                the currently emerging field like Machine Learning </p>
+
+            <a href="images/resume.pdf" download="resume.pdf"><button id="button">Resume Download</button></a>
+
+        </div>
+
+        <div class="info">
+            <img src="images/personal.jpg" alt="">
+        </div>
+
+    </div>
+
+
+
+
+    <!-- skills -->
+
+    <div id="skills">
+        <h2 style="margin: 50px 0px; text-align: center;padding-top: 20px;">Skills</h2>
+
+        <div class="row" class="row1">
+
+            <div class="row1">
+                <img src="images/prog_lang_g.png" alt="" class="skills">
+                <h3>Programming languages</h3>
+                <p>I am pretty familiar with Python and C++ programming languages and I use Python - Django and ML while
+                    C++ - DSA.
+                </p>
+            </div>
+
+            <div class="row1">
+                <img src="images/web_g.png" alt="" class="skills">
+                <h3>Web Development</h3>
+                <p>Along with HTML,CSS,JS I also use Django to build backend for the website, Bootstrap faster
+                    development. </p>
+            </div>
+
+            <div class="row1">
+                <img src="images/power_g.png" alt="" class="skills">
+                <h3>Power BI</h3>
+                <p>Power BI is majorly used to create dashboards that are visually appealing as well as interactive.</p>
+            </div>
+
+            <div class="row1">
+                <img src="images/db_g.png" alt="" class="skills">
+                <h3>Databases</h3>
+                <p> As databases are inevitable part of the software applications I possess a good foundation in MYSQL
+                    and MongoDB.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- projects -->
+    <div id="projects" style="margin: 100px 0px; ">
+        <h2 style=" margin: 50px 0px; text-align: center;">Projects</h2>
+
+        <!-- single row multiple columns -->
+        <div class="prow">
+            <div class="pcards">
+                <img src="images/data_analytics.png" alt="">
+                <h3>Sales Data Analysis</h3>
+                <p>Here we analyzed the sales data of a company. And we create a dashboard to represent the outcomes of
+                    the analyzed data using Power BI tool. Here we basically first preprocessed the dataset and then
+                    inputed it into the Power BI</p>
+            </div>
+            <div class="pcards">
+                <img src="images/skin_disease.png" alt="">
+                <h3>Skin Disease Prediction using CNN</h3>
+                <p>Here we take the image of the skin disease as a input from the user. Then we analyze this image to
+                    predict what type of disease it is based on the 10 classes upon which the CNN model has been trained
+                </p>
+            </div>
+            <div class="pcards">
+                <img src="images/black_white.png" alt="">
+                <h3>Coloring black and white Images using CNN</h3>
+                <p>Here we take a black and white image as input and the CNN model generates an colored output image for
+                    the input. Here we use certain layers of a pretrained model to perform this operation.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- contact -->
+    <div id="contact">
+        <!-- contain heading and form container -->
+        <h2 style="text-align: center; margin: 50px 0px;">Get in touch with me</h2>
+        <!-- contains entire form below -->
+        <div class="form-container">
+            <form action="https://formspree.io/f/xjvnbgyj" method="post" id="my-form">
+                
+                <div class="horizontal">
+                    
+                    <div class="adjacent left">
+                        <label for="first_name">First Name</label> <br>
+                        <input type="text" id="first_name" name="fname" required>
+                    </div>
+
+                    <div class="adjacent right">
+                        <label for="last_name">Last Name</label><br>
+                        <input type="text" id="last_name" name="lname" required>
+                    </div>
+
+                </div>
+
+                <div class="horizontal">
+
+                    <div class="adjacent left">
+                        <label for="email">Email</label><br>
+                        <input type="" id="email" name="sender-email" required>
+                    </div>
+                    
+                    <div class="adjacent right">
+                        <label for="phone">Phone Number</label><br>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                </div>
+                
+                <div class="textarea">
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="message" cols="50" rows="10" name="message" required></textarea>
+                </div>
+
+                <input type="submit" value="Submit" id="submit-btn">
+                
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        
+        <h3 style="display: inline; ">Copyright 2023. Built by Abhishek Shinde</h3>
+    </footer>
+
+    
+    
+</body>
+
+</html>
